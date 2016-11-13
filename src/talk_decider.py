@@ -47,7 +47,7 @@ def build_training_set():
 
 def train_and_save():
     X, y = build_training_set()
-    clf = rfc()
+    clf = rfc(n_estimators=100)
     clf.fit(X, y)
     pickle.dump(clf, open(PARAMS['talk_model'], 'wb'))
     
