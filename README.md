@@ -4,7 +4,7 @@
 
 This is a YHack 2016 project and submission.
 
-The Cove is a 2D Survival Game that employs an empotionally adaptive artificial intelligence. The goal of the game is simple: the player is stranded on an island, trying to build a boat to escape. However, there is a mysterious being on the island, called The Hound, that has the one final piece you need to finish the boat. Upon interacting with it, the player is presented with four options:
+The Cove is a 2D Survival Game that employs an emotionally adaptive artificial intelligence. The goal of the game is simple: the player is stranded on an island, trying to build a boat to escape. However, there is a mysterious being on the island, called The Hound, that has the one final piece you need to finish the boat. Upon interacting with it, the player is presented with four options:
 
 #### Run
 If the player changes his or her mind, try to leave the interaction and see if The Hound allows it.
