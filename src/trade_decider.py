@@ -15,7 +15,7 @@ def trade(p):
         new_p = change_h(p)
         return 'success', new_p
     elif rv < probs[2]:
-        return 'no action', p
+        return 'run', p
     else:
         p['sentence'] = 'N/A'
         p['d'] = 1
