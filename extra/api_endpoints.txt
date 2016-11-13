@@ -1,0 +1,32 @@
+YHack API Endpoints
+-------------------
+
+/new_bot
+- input: None
+- output: {"hostility": Float}
+- when?: a new game starts
+
+/begin_interact
+- input: None
+- output: None
+- when?: a new interaction begins (before user selection)
+
+/run_interact
+- input: None
+- output: {"action": "fight" OR "no action" , "mult": Float, "hostility": Float}
+- when?: the user selects "run"
+
+/talk_interact
+- input: {"sentence": String}
+- output: {"action": "fight" OR "run" OR "no action" , "mult": Float, "hostility": Float}
+- when?: the user selects "talk" and submits text
+
+/fight_interact
+- input: None
+- output: {"action": "fight" OR "no action" , "mult": Float, "hostility": Float}
+- when?: the user selects "fight"
+
+/trade_interact
+- input: None
+- output: {"action": "fight" OR "success" OR "no action" OR "win" , "mult": Float, "hostility": Float}
+- when?: when the user selects "trade"

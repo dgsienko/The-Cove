@@ -1,0 +1,8 @@
+
+*.pyc
+
+src/data/run_train.txt
+
+src/data/sentence_train.txt
+
+src/data/talk_train.txt

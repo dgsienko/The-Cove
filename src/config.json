@@ -1,0 +1,15 @@
+{
+    "anger_delta_min": -8,
+    "anger_delta_max": 8,
+    "hostility_max": 0.70,
+    "hostility_min": 0.20,
+    "bot_file": "states/main_bot.txt",
+    "indico_api_key": "DUMMY_API_KEY",
+    "run_dataset": "data/run_dataset.txt",
+    "talk_dataset": "data/talk_dataset.txt",
+    "feature_order": ["anger", "agree", "timid", "count", "hostility"],
+    "run_model": "models/run_model.p",
+    "talk_model": "models/talk_model.p",
+    "avg_fight": 0.72,
+    "trade_probs": [0.05, 0.475, 0.9, 1]
+}
