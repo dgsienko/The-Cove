@@ -24,6 +24,8 @@ def generate_bot(show=False):
         return p
     
 def save_bot(p):
+    for key in p:
+        p[key] = float('%.2f' % p[key])
     open(PARAMS['bot_file'], 'w').write(str(p))
     
 def load_bot():

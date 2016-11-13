@@ -82,4 +82,4 @@ def trade_interact():
                       call='trade_interact',
                       hostility=p['hostility']))
     
-app.run(host='0.0.0.0')
+app.run()
