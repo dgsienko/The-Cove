@@ -59,10 +59,10 @@ def talk_interact():
 def fight_interact():
     p = bot_manager.load_bot()
     action, mult = 'run', ((p['anger']+p['hostility'])/2)
-    if mult > PARAMS['avg_fight']:
+    if mult > PARAMS['avg_fight'] or p['hostility'] > .9:
         action = 'fight'
     else:
-        p['hostility'] = 1
+        p['hostility'] = min(.99, p['hostility'] + .2)
         bot_manager.save_bot(p)
     return dumps(dict(call='fight_interact',
                       action=action,
@@ -77,7 +77,8 @@ def trade_interact():
     bot_manager.save_bot(p_new)
     if action == 'fight':
         mult = ((p['anger']+p['hostility'])/2)
-    return dumps(dict(action=action,
+    return dumps(dict(call='trade_interact',
+                      action=action,
                       mult=mult, 
                       hostility=p['hostility']))
     
