@@ -13,7 +13,7 @@ If the player changes his or her mind, try to leave the interaction and see if T
 The player has some items he or she can attempt to give The Hound. It may respond favorably. 
 
 #### Talk
-Want to smooth talk The Hound? Anger it? Plead with it? Go ahead! The Cove employs NLP and ML to teach that allow The Hound to respond emotionally to text from the player.
+Want to smooth talk The Hound? Anger it? Plead with it? Go ahead! The Cove employs NLP and ML to teach The Hound to respond emotionally to text from the player.
 
 #### Battle
 Think you can directly beat The Hound in one-on-one battle? If you defeat it, victoriously take the item you need.
