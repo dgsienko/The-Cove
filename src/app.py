@@ -15,7 +15,8 @@ def new_bot():
     bot_manager.generate_bot()
     p = bot_manager.load_bot()
     return dumps(dict(call='new_bot',
-                      hostility=p['hostility']))
+                      hostility=p['hostility'],
+                      mult=0))
     
 @app.route('/begin_interact', methods=['GET'])
 def begin_interact():
