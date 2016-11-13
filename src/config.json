@@ -4,7 +4,7 @@
     "hostility_max": 0.70,
     "hostility_min": 0.20,
     "bot_file": "states/main_bot.txt",
-    "indico_api_key": "374699a4e0272c79937b00688aad7da2",
+    "indico_api_key": "DUMMY_API_KEY",
     "run_dataset": "data/run_dataset.txt",
     "talk_dataset": "data/talk_dataset.txt",
     "feature_order": ["anger", "agree", "timid", "count", "hostility"],
