@@ -27,4 +27,6 @@ def save_bot(p):
     open(PARAMS['bot_file'], 'w').write(str(p))
     
 def load_bot():
-    return eval(open(PARAMS['bot_file'], 'r').read())
+    p = eval(open(PARAMS['bot_file'], 'r').read())
+    p['hostility'] = min(.99, p['hostility'])
+    return p

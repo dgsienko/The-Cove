@@ -22,7 +22,10 @@ def begin_interact():
     p = bot_manager.load_bot()
     p['count'] += 1
     bot_manager.save_bot(p)
-    return dumps(dict(call='begin_interact'))
+    mult = ((p['anger']+p['hostility'])/2)
+    return dumps(dict(call='begin_interact',
+                      mult=mult,
+                      hostility=p['hostility']))
 
 @app.route('/run_interact', methods=['GET'])
 def run_interact():
