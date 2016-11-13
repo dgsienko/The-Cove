@@ -35,4 +35,4 @@ def main(p):
         h_delta = ((p['count']-1)/p['count'])*(0.1*p['anger'])+(((p['agree']+p['timid'])/2)*0.1)
         return 'fight', h_delta
     else:
-        return 'no action', 0
+        return 'end event', 0

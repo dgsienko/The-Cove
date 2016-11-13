@@ -13,7 +13,7 @@ YHack API Endpoints
 
 /run_interact
 - input: None
-- output: {"action": "fight" OR "no action" , "mult": Float, "hostility": Float}
+- output: {"action": "fight" OR "end event" , "mult": Float, "hostility": Float}
 - when?: the user selects "run"
 
 /talk_interact
