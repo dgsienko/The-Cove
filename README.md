@@ -45,13 +45,13 @@ That's it! You should be ready to run the server and play the game!
 
 ## Running the Server
 
-Simply start `src/app.py` using the following:
+Simply start [src/app.py] (https://github.com/coreycle/The-Cove/blob/master/src/app.py) using the following:
 
 ```sh
 python app.py
 ```
 
-and the webserver will be started and hosted locally, so the game can utilize the Python scripts for its logic.
+and the webserver will be initialized and hosted locally, so the game can utilize the Python scripts for its logic.
 
 ## Playing the Game
 

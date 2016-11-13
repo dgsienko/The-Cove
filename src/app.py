@@ -40,8 +40,7 @@ def run_interact():
 
 @app.route('/talk_interact', methods=['GET', 'POST'])
 def talk_interact():
-    #sentence = request.json['sentence']
-    sentence = 'Testing, hello there!'
+    sentence = request.json['sentence']
     p = bot_manager.load_bot()
     p['sentence'] = sentence
     p_new = talk_decider.main(p)
@@ -55,9 +54,12 @@ def talk_interact():
 @app.route('/fight_interact', methods=['GET'])
 def fight_interact():
     p = bot_manager.load_bot()
-    action, mult = 'no action', ((p['anger']+p['hostility'])/2)
+    action, mult = 'run', ((p['anger']+p['hostility'])/2)
     if mult > PARAMS['avg_fight']:
         action = 'fight'
+    else:
+        p['hostility'] = 1
+        bot_manager.save_bot(p)
     return dumps(dict(call='fight_interact',
                       action=action,
                       mult=mult, 
