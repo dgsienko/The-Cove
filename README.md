@@ -22,7 +22,7 @@ Think you can directly beat The Hound in one-on-one battle? If you defeat it, vi
 
 The game is built and compiled in Game Maker: Studio. We provide the .exe game for you in this repo, no installation necessary. (For Mac users, this program works perfectly with your favorite Windows program emulator, such as Wine or CrossOver).
 
-The backend of the game is written in Python 2, where a web server is hosted that the game can make HTTP requests to. The user has to manually set this up before starting the game. 
+The backend of the game is written in Python 2 (MUST USE PYTHON 2), where a web server is hosted that the game can make HTTP requests to. The user has to manually set this up before starting the game. 
 
 First, the necessary Python modules to install using pip:
 
