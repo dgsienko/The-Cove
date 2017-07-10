@@ -39,13 +39,13 @@ pip install indicoio
 
 Next, to run this game yourself, you need to aquire a free Indico API key [here] (https://indico.io/non-commercial) to allow the program to use their API (for talking with The Hound).
 
-In [src/config.json] (https://github.com/coreycle/The-Cove/blob/master/src/config.json), change the `indico_api_key` to the one you aquired above.
+In [src/config.json], change the `indico_api_key` to the one you aquired above.
 
 That's it! You should be ready to run the server and play the game!
 
 ## Running the Server
 
-Simply start [src/app.py] (https://github.com/coreycle/The-Cove/blob/master/src/app.py) using the following:
+Simply start [src/app.py] using the following:
 
 ```sh
 python app.py
